@@ -72,6 +72,7 @@ namespace EmpowerMS_1
 		public void Run(IEngine engine)
 		{
 			engine.GenerateInformation("Hello World - miloss");
+			/// added
 			var myDms = engine.GetDms();
 
 			foreach (var element in myDms.GetElements())
