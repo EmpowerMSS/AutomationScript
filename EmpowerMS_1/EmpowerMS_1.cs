@@ -61,7 +61,7 @@ namespace EmpowerMS_1
 	/// Represents a DataMiner Automation script.
 	/// </summary>
 	/// another comment
-	/// comment 2
+	/// comment 3
 	public class Script
 	{
 		/// <summary>
