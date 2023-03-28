@@ -56,7 +56,8 @@ namespace EmpowerMS_1
 	using System.Globalization;
 	using System.Text;
 	using Skyline.DataMiner.Automation;
-	
+	using Skyline.DataMiner.Core.DataMinerSystem.Automation;
+
 	/// <summary>
 	/// Represents a DataMiner Automation script.
 	/// </summary>
@@ -71,6 +72,12 @@ namespace EmpowerMS_1
 		public void Run(IEngine engine)
 		{
 			engine.GenerateInformation("Hello World - miloss");
+			var myDms = engine.GetDms();
+
+			foreach (var element in myDms.GetElements())
+			{
+				engine.GenerateInformation(element.Name);
+			}
 		}
 	}
 }
