@@ -78,7 +78,6 @@ namespace EmpowerMS_1
 			foreach (var element in myDms.GetElements())
 			{
 				engine.GenerateInformation(element.Name);
-				engine.GenerateInformation(element.Description);
 			}
 		}
 	}
