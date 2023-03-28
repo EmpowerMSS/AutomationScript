@@ -55,6 +55,7 @@ namespace EmpowerMS_1
 	using System.Collections.Generic;
 	using System.Globalization;
 	using System.Text;
+	using Empower.Library.Room1;
 	using Skyline.DataMiner.Automation;
 	using Skyline.DataMiner.Core.DataMinerSystem.Automation;
 
@@ -79,6 +80,9 @@ namespace EmpowerMS_1
 			{
 				engine.GenerateInformation(element.Name);
 			}
+
+			var order = OrderFactory.CreateOrder("Order 1");
+			order.Dispatch("Milos Sedlacek");
 		}
 	}
 }
